@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/12f71038e4.js" crossorigin="anonymous"></script>
+  </head> 
+  <body>
+    <section class="header">
+    <nav>
+      <div></div>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <li><a href="home.html">Main</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   <div class="container">
+     <h1>Contact Info</h1>
+     <form action="https://formsubmit.co/malhart88@gmail.com" method="POST">
+     <input type="text" name="Name" placeholder="Full Name" required>
+     <input type="email" name="Email" placeholder="Email" required>
+     <select name="select">
+       <option>Select</option>
+       <option>Schedule an Interview</option>
+       <option>Ask Questions</option>
+       <option>Hire</option>
+       <option>Other</option>
+       <textarea name="Message" placeholder="Message" required></textarea>
+       <button class="button" type="submit">Send</button>
+       </form>
+   </div> 
+    <section class="contact-info">
+      <i href="https://www.facebook.com/Malika8348" class="fa-brands fa-square-facebook"></i>
+      <i href="https://www.instagram.com/malhart88/" class="fa-brands fa-instagram"></i>
+      <i href="https://radix.codes/" class="fa-solid fa-earth-americas"></i>
+    </section>
+    <section class="phone">
+      <p>Phone: 786-395-1497</p>
+      <p>Email: info@radix.codes</p>
+    </section>
+ 
+    <script> 
+  var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+ </body>  
+</html>

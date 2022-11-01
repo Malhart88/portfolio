@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Portfolio - Malika Hartman</title>
+  <link rel="stylesheet" href="./projects.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/12f71038e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="header">
+    <nav>
+      <div></div>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <li><a href="home.html">Main</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Projects</h1>
+      <p class="projects">Radix Website</p>
+      <a href="https://radix.codes/">
+  <img src="https://assets.codepen.io/8763834/web.png" alt="HTML tutorial" style="width:300px;height:200px;">
+</a>  
+      <p>Description: Business Website </p>
+      <p class="end">Tools: Wordpress, HTML, CSS</p>
+
+      
+      <p class="projects">Budget App</p>
+      <a href="budget-app.html">
+  <img src="https://assets.codepen.io/8763834/budget.png" alt="HTML tutorial" style="width:300px;height:200px;">
+</a>
+      <p>Description: Budget planing application</p>
+      <p class="end">Tools: HTML, CSS, JavaScript</p>
+      
+      
+      <p class="projects">Tic Tac Toe</p>
+      <a href="tictac.html">
+      <img src="https://assets.codepen.io/8763834/tic+tac+toe.png" alt="HTML tutorial" style="width:300px;height:200px;">
+</a>
+      <p>Description: Fun game with AI</p>
+      <p class="end">Tools: HTML, CSS, JavaScript</p>
+      
+      
+      <p class="projects">Calculator</p>
+      <a href="calculator.html">
+  <img src="https://assets.codepen.io/8763834/calcultor.png" alt="HTML tutorial" style="width:300px;height:200px;">
+</a>
+      <p>Description: Basic Calculator</p>
+      <p class="end">Tools: HTML, CSS, JavaScript</p>
+ 
+   </div>
+	</section>
+<!---JavaScript for Menu--->
+  <script> 
+  var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
+

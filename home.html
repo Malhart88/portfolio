@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Portfolio - Malika Hartman</title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <script src="https://kit.fontawesome.com/12f71038e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="header">
+    <nav>
+      <div></div>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <li><a href="home.html">Main</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <div class="box">
+        <h1 class="header1">creative</h1>
+        <h1 class="header2">Front</h1>
+        <h1 class="header3">End</h1>
+        <h1 class="header4">Developer</h1>
+      </div>
+      <div class="snowflake">❄</div>
+
+<!---JavaScript for Menu--->
+  <script> 
+  var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
+
